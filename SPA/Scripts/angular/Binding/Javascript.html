@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function init(){
+			var input = document.getElementById("input");
+			var output = document.getElementById("output");
+			
+			input.onkeyup = function(){
+				output.innerHTML = this.value;
+			}
+		}
+	</script>
+</head>
+<body onload="init()">
+<input id="input" type="text">
+<div id="output"></div>
+</body>
+</html>

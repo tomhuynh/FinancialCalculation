@@ -1,0 +1,582 @@
+/* NetFins customization to the base FCSA bootstrap CSS */
+/*** Bootstrap Overrides ***/
+.form-control {
+  font-size: 12px;
+  padding: 4px 8px;
+  height: 30px;
+}
+.form-control.form-control-bootstrap {
+  font-size: 14px;
+  padding: 6px 12px;
+  height: 34px;
+}
+.form-group .help-block {
+  display: none;
+}
+.form-group.has-error .help-block {
+  display: block;
+}
+.btn-grey {
+  border: 1px solid #bbb;
+}
+table .form-group {
+  margin-bottom: 0;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  cursor: pointer;
+}
+.table-hover > tbody > tr:hover > td.hover-red {
+  color: red;
+}
+.main-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.popover {
+  color: #555555;
+  font-weight: normal;
+}
+a {
+  cursor: pointer;
+}
+/*** End Bootstrap Overrides ***/
+input[type=radio] {
+  margin-right: 4px;
+}
+.modal-body {
+  padding: 15px;
+}
+.softborder {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+.customerLabel {
+  font-weight: bold;
+}
+.statementLabel {
+  min-width: 200px;
+}
+.underlineborder-heading {
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.underlineborderbold-heading {
+  border-bottom: 1px solid #999;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.valign-middle {
+  vertical-align: middle !important;
+}
+.align-right {
+  text-align: right !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.no-resize {
+  resize: none;
+}
+.tab {
+  margin-left: 15px;
+}
+th.sortable {
+  cursor: pointer;
+}
+th.sortable > i.glyphicon {
+  font-size: 10px;
+  margin-left: 3px;
+}
+.customer-header {
+  margin-bottom: -7px;
+}
+.customer-header .customer-links {
+  float: right;
+  margin-top: 6px;
+}
+.customer-header .customer-links a {
+  margin-left: 20px;
+}
+.customer-header .customer-name {
+  display: inline-block;
+}
+.customer-header .customer-cif {
+  display: inline-block;
+  margin-left: 5px;
+}
+.customer-header .underlineborderbold-heading {
+  margin-top: 3px;
+}
+.customer-header .customer-viewer {
+  height: 35px;
+  margin-top: -20px;
+}
+.customer-header .customer-locked-by {
+  height: 35px;
+  margin-top: -20px;
+  border: 2px solid yellow;
+}
+.summary-header-container {
+  padding: 10px 0 0 0;
+}
+.summary-header-container .alert {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 10px;
+}
+.summary-header-container .alert.alert-info {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.summary-header-container .alert.alert-warning {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.summary-header-container h4 {
+  font-weight: bold;
+  margin-bottom: 0;
+  display: inline-block;
+  margin-right: 10px;
+}
+.summary-header-container button {
+  margin-top: -7px;
+}
+.summary-header-container span {
+  display: inline-block;
+  margin-right: 5px;
+}
+/*** Summary Pages ***/
+.editing-details .summary-detail:not(.summary-detail-readonly):hover:not(.empty) {
+  cursor: pointer;
+  background-color: #4aa3b5;
+  color: white;
+}
+.editing-details .summary-detail:not(.summary-detail-readonly):hover:not(.empty) > .click-to-edit,
+.editing-details .summary-detail:not(.summary-detail-readonly):hover:not(.empty) > div .click-to-edit {
+  display: inline-block;
+}
+.adjusted-detail {
+  background-color: #dbedf0;
+}
+.editing-details .summary-detail:hover .adjusted-detail {
+  background-color: #4aa3b5;
+}
+.editing-summary .summary-detail .form-control {
+  height: 26px;
+}
+.editing-summary .summary-detail .form-group {
+  margin-bottom: 0;
+}
+.summary-detail {
+  padding: 2px 5px;
+}
+.summary-detail > .click-to-edit,
+.summary-detail > div .click-to-edit {
+  display: none;
+  color: #82e6f4;
+  font-style: italic;
+  margin-left: 10px;
+}
+.editing-details .summary-detail-notes:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  color: black;
+}
+.editing-details .summary-detail-notes:hover > .click-to-edit,
+.editing-details .summary-detail-notes:hover > div .click-to-edit {
+  display: inline-block;
+}
+.summary-detail-notes {
+  padding: 2px 5px;
+}
+.summary-detail-notes > .click-to-edit,
+.summary-detail-notes > div .click-to-edit {
+  display: none;
+  color: darkblue;
+  font-style: italic;
+  margin-left: 10px;
+}
+.summary-total {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  border-top: 1px solid #d8d8d8;
+}
+.summary-calculation-display {
+  padding: 2px 5px;
+}
+/*** End Summary Pages ***/
+/*** Table Scroll ***/
+.table-scroll-header {
+  margin-bottom: 0;
+}
+.table-scroll-content {
+  overflow-y: scroll;
+  border: 1px solid #e5e5e5;
+  margin-top: -2px;
+}
+/*** End Table Scroll ***/
+/*** Detail Modals ***/
+.detail-modal .modal-dialog {
+  width: 1000px;
+}
+.detail-modal.default-width .modal-dialog {
+  width: 600px;
+}
+.detail-modal.small-modal .modal-dialog {
+  width: 500px;
+}
+.detail-modal.small-modal .table-scroll-content {
+  height: 200px;
+}
+.detail-modal .modal-content {
+  position: relative;
+}
+.detail-modal .detail-modal-navigation {
+  position: absolute;
+  top: 100px;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  cursor: pointer;
+}
+.detail-modal .detail-modal-navigation.detail-modal-navigation-previous {
+  left: -70px;
+}
+.detail-modal .detail-modal-navigation.detail-modal-navigation-next {
+  right: -70px;
+}
+.detail-modal .detail-modal-navigation .glyphicon {
+  font-size: 36px;
+  color: #fff;
+}
+.detail-modal .input-group .form-control:last-child {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  width: 100%;
+}
+.detail-modal .table-scroll-content {
+  height: 300px;
+}
+.detail-modal .table-scroll-content.loan-summary-content {
+  height: 150px;
+  margin-bottom: 20px;
+}
+.detail-modal .loans-modal .panel-body {
+  padding: 10px;
+}
+.detail-modal .loans-modal .panel-body .form-group {
+  margin-bottom: 10px;
+}
+.detail-modal .purchase-sale-modal {
+  height: 600px;
+}
+.detail-modal .purchase-sale-modal .btn {
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+.detail-modal .purchase-sale-modal h4 {
+  margin-bottom: 3px;
+}
+.detail-modal .purchase-sale-modal .table-scroll-content {
+  height: 125px;
+}
+.detail-modal .purchase-sale-modal .zoomed .table-scroll-content {
+  height: 525px;
+}
+.detail-modal .purchase-sale-modal .sell {
+  display: block;
+  cursor: pointer;
+  width: 38px;
+  height: 30px;
+  background: transparent url('../images/sold.png') no-repeat;
+}
+.detail-modal .purchase-sale-modal .sell:hover {
+  background: transparent url('../images/sold-hover.png') no-repeat;
+}
+.detail-modal .purchase-sale-modal .unsell {
+  cursor: pointer;
+}
+.detail-modal .purchase-sale-modal .unsell:hover {
+  color: green;
+}
+.detail-modal .add-detail-button {
+  margin-bottom: 10px;
+}
+.detail-modal .currency-label {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 5px;
+}
+.detail-modal .detail-total {
+  padding-right: 62px;
+  padding-top: 10px;
+  margin-bottom: -10px;
+}
+.detail-modal .detail-total-amount {
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  float: right;
+}
+.detail-modal .detail-total-label {
+  margin-right: 5px;
+  float: right;
+}
+.detail-modal .remove-detail {
+  padding-top: 6px;
+}
+.detail-modal .loading > img {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.detail-modal .alert {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+/*** End Detail Modals ***/
+.td-col-1 {
+  width: 38px;
+}
+.td-col-2 {
+  width: 76px;
+}
+.td-col-3 {
+  width: 114px;
+}
+.td-col-4 {
+  width: 152px;
+}
+.td-col-5 {
+  width: 190px;
+}
+.td-col-6 {
+  width: 228px;
+}
+.td-col-7 {
+  width: 266px;
+}
+.td-col-8 {
+  width: 304px;
+}
+.td-col-9 {
+  width: 342px;
+}
+.td-col-10 {
+  width: 380px;
+}
+.td-col-11 {
+  width: 418px;
+}
+.td-col-12 {
+  width: 456px;
+}
+/*** Feedback Modals ***/
+#feedback-modal {
+  margin: 0 0 0 -300px;
+  width: 600px;
+}
+#feedback-modal textarea {
+  height: 100px;
+  width: 550px;
+}
+#feedback-btn {
+  position: fixed;
+  display: block;
+  top: 275px;
+  left: -31px;
+  overflow: hidden;
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+/*** End Feedback Modals ***/
+.transparent-and-borderless {
+  border: none;
+  background-color: transparent;
+}
+.highlight {
+  background-color: #d9edf7;
+}
+.table-striped tbody tr.highlight:nth-child(odd) td {
+  background-color: #d9edf7;
+}
+.risk-calculations {
+  background: whitesmoke;
+  margin: -5px -10px -10px -10px;
+  padding: 5px 10px 10px 10px;
+}
+.risk-calculations .summary-detail:hover {
+  background: #e9e9e9;
+  cursor: default;
+}
+.ellipsis {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap;
+}
+.table-fixed {
+  table-layout: fixed;
+}
+.alert-custom {
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.text-label {
+  display: block;
+}
+.zoomed {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #ffffff;
+  z-index: 100;
+}
+.hidden {
+  visibility: hidden;
+}
+.dd-handle {
+  cursor: move;
+}
+.sortable-helper {
+  margin-left: 40px;
+  transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+}
+.sortable-placeholder {
+  background-color: lightblue !important;
+  color: white;
+}
+.sortable-placeholder > td,
+.sortable-placeholder th {
+  background-color: lightblue !important;
+  color: white;
+}
+.note-hover:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  color: black;
+}
+.note-hover:hover > .click-to-edit,
+.note-hover:hover > div .click-to-edit {
+  display: inline-block;
+}
+.warning-highlight {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: orange;
+}
+.remove,
+.remove-detail {
+  cursor: pointer;
+  color: #ccc;
+  vertical-align: middle;
+}
+.remove:hover,
+.remove-detail:hover {
+  color: red;
+}
+.create-consolidation-balance-sheet-modal {
+  height: 550px;
+}
+.create-consolidation-balance-sheet-modal .table-scroll-content {
+  height: 150px;
+}
+.create-consolidation-balance-sheet-modal .zoomed .table-scroll-content {
+  height: 535px;
+}
+.readonly-remove-icon {
+  width: 12px;
+}
+.clickable-chart {
+  cursor: pointer;
+}
+.red-text,
+.negative-percentage {
+  color: #bf311a;
+}
+.chart-wrapper {
+  background-color: #f5f5f5;
+}
+.legend-table {
+  border-collapse: collapse !important;
+}
+.legend-table td,
+.legend-table th {
+  background-color: #f5f5f5 !important;
+}
+.legend-table > thead > tr > th,
+.legend-table > tbody > tr > th,
+.legend-table > tfoot > tr > th,
+.legend-table > thead > tr > td,
+.legend-table > tbody > tr > td,
+.legend-table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+}
+.legend-table > thead > tr > th {
+  vertical-align: bottom;
+  font-size: 12px;
+  background: #f5f5f5;
+  color: #333333;
+}
+.chart-legend-indicator {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-top: 4px;
+}
+#report-frame {
+  border: none;
+  width: 800px;
+  height: 1400px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.navbar-header2 {
+  padding: 10px 15px 10px 0;
+  float: left;
+  font-size: 18px;
+  line-height: 20px;
+}
+.custom-link,
+.custom-link:hover,
+.custom-link:hover,
+.custom-link:active,
+.custom-link:link,
+.custom-link:focus {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 100%;
+  text-decoration: none;
+  color: #333333;
+}
+.highlight-field {
+  border-color: #6cb16e;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-color: #d3e7d3;
+}
+/* disable the clear and reveal buttons that IE adds to text boxes  */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+.table-header {
+  background: black;
+}

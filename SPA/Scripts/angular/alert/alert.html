@@ -1,0 +1,71 @@
+﻿<div ng-app="app">
+    <div>
+        <table>
+            <tr>
+                <td><label>Income 1: </label></td>
+                <td>
+                    <input type="text" ng-model="Income1"  />
+                </td>
+            </tr>
+            <tr>
+                <td><label>Income 2: </label></td>
+                <td>
+                    <input type="text" ng-model="Income2" />
+                </td>
+            </tr>
+
+        </table>
+        
+        <table>
+            <tr>
+                <td style="width: 200px">
+                    <input type="button" value="M-Office" ng-click="calculateOOOutput(Income1, Income2)" />
+                    <div style="font-size: x-large">{{OOOOuput|currency}}</div>
+                </td>
+
+                <td style="width: 200px">
+                    <input type="button" value="EPLus" ng-click="calculateEPPlusOutput(Income1, Income2)" />
+                    <div style="font-size: x-large">{{EPOuput|currency}}</div>
+                </td>
+
+                <td style="width: 200px">
+                    <input type="button" value="Memory Calculation" ng-click="calculateMemoryOutput(Income1, Income2)" />
+                    <div style="font-size: x-large">{{MemoOuput|currency}}</div>
+                </td>
+
+                <td>
+                    <a href="http://localhost:85/web/abc/calcEps" target="_blank"> Download </a>
+                </td>
+            </tr>
+        </table>
+        <table class="table table-striped table-hover table-fixed">
+            <thead class="table-header">
+                <tr>
+                    <th>Id</th>
+                    <th>Description</th>
+                    <th>Income1</th>
+                    <th>Income2</th>
+                    <th>Income3</th>
+                    <th>Income4</th>
+                    <th>Income5</th>
+                    <th>Income6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in alerts track by $index">
+                    <td>{{user.Id}}</td>
+                    <td>{{user.Description}}</td>
+
+                    <td>{{user.Income1}}</td>
+                    <td>{{user.Income2}}</td>
+                    <td>{{user.Income3}}</td>
+                    <td>{{user.Income4}}</td>
+                    <td>{{user.Income5}}</td>
+                    <td>{{user.Income6}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
+
+    </div>
+</div>

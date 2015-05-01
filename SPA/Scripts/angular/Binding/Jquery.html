@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../lib/jquery/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var input=$('#input');
+			var output=$('#output');
+			
+			input.keyup(function(){
+				output.text(input.val());
+			})
+		
+		})
+	</script>
+</head>
+<body>
+<input id="input" type="text">
+<div id="output"></div>
+</body>
+</html>
